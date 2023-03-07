@@ -1,5 +1,7 @@
 # Lektion 7 mars
 
+Komponentträd över todo-appen: https://www.figma.com/file/EAs8VFLs5XtMto38iDhiQy/Untitled?node-id=0%3A1&t=qYZJuvsz6rKCIKqA-0
+
 ## Övningar
 
 **Shopping cart**
@@ -9,6 +11,10 @@ Gör om så din shopping cart loopar ut dina produkter. Du behöver lägga alla 
 **Shakespeare insult generator**
 
 https://gist.github.com/zocom-christoffer-wallenberg/1c28142d9dc9a677d1ec356f84f3b896
+
+**Ifall man vill öva mer med arrayer, objekt och map samt filter-metoden i vanilla JS**
+
+https://gist.github.com/zocom-christoffer-wallenberg/78fc778b6c9f0282b6cfc95585b56e56#file-users-js
 
 ## Artiklar
 

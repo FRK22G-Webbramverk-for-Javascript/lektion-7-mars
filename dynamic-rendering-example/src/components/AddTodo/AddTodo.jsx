@@ -1,6 +1,6 @@
 import './AddTodo.css';
 
-function AddTodo() {
+function AddTodo(props) {
     let todo = '';
 
     function getTodoInput(event) {
@@ -10,6 +10,7 @@ function AddTodo() {
 
     function handleClick() {
         console.log(`Lägger till todo: ${todo}`);
+        props.addNewTodo(todo);
     }
 
     return (

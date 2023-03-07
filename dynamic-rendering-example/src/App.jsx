@@ -5,23 +5,38 @@ import AddTodo from './components/AddTodo/AddTodo'
 
 function App() {
   const todos = [
-    { todo: 'Köp kaffe', done: false },
-    { todo: 'Köp kaka', done: false },
-    { todo: 'Brygg kaffe', done: false },
-    { todo: 'Drick kaffe', done: false },
-    { todo: 'Koda React', done: false }
+    { id: 1, todoText: 'Köp kaffe', done: false },
+    { id: 2, todoText: 'Köp kaka', done: false },
+    { id: 3, todoText: 'Brygg kaffe', done: false },
+    { id: 4, todoText: 'Drick kaffe', done: false },
+    { id: 5, todoText: 'Koda React', done: false }
   ]
 
   const todoComponents = todos.map((todo) => {
-    return <TodoItem todo={ todo.todo } done={ todo.done } />
+    return <TodoItem todo={ todo.todoText } done={ todo.done } key={ todo.id } />
   });
+
+  // Denna funktion används för att manipulera våran todos-array ovan
+  function addNewTodo(todoFromInput) {
+    console.log(`Todo text from inputfield: ${todoFromInput}`);
+
+    const newTodo = {
+      id: todos.length + 1,
+      todoText: todoFromInput,
+      done: false
+    }
+
+    todos.push(newTodo);
+
+    console.log(todos);
+  }
 
   return (
     <div className="App">
       <ul className='todos'>
         { todoComponents }
       </ul>
-      <AddTodo />
+      <AddTodo addNewTodo={ addNewTodo } />
     </div>
   )
 }
