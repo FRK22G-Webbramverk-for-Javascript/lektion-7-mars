@@ -3,9 +3,11 @@
 ## Övningar
 
 **Shopping cart**
+
 Gör om så din shopping cart loopar ut dina produkter. Du behöver lägga alla produkter i en array.
 
 **Shakespeare insult generator**
+
 https://gist.github.com/zocom-christoffer-wallenberg/1c28142d9dc9a677d1ec356f84f3b896
 
 ## Artiklar
